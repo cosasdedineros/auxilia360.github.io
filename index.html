@@ -301,8 +301,7 @@
     /* ─── FEATURED / HERO ARTICLE ─── */
     .featured-grid {
       display: grid;
-      grid-template-columns: 1.6fr 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: 1fr;
       gap: 1px;
       background: var(--clr-border);
       border: 1px solid var(--clr-border);
@@ -312,7 +311,6 @@
     }
 
     .feat-main {
-      grid-row: 1 / 3;
       position: relative;
       min-height: 380px;
       background: #1a3a4a;
@@ -475,6 +473,7 @@
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      align-items: start;
       gap: 1.2rem;
       margin-bottom: 2.5rem;
     }
@@ -681,7 +680,7 @@
     <span>6 de junio de 2026</span>
     <div class="topbar-links">
       <a href="politica.html">Política de privacidad</a>
-      <a href="mailto:auxilia360@gmail.com">Contacto</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=auxilia360@gmail.com&su=Mensaje%20desde%20la%20web&body=Hola%2C%20te%20escribo%20desde%20Auxilia360" target="_blank">Contacto</a>
     </div>
   </div>
 
@@ -810,7 +809,7 @@
               
               <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
                 <a href="#servicios" class="btn btn-white" style="font-size:.85rem;padding:.55rem 1.4rem;">Ver servicios</a>
-                <a href="mailto:auxilia360@gmail.com" class="btn btn-outline" style="font-size:.85rem;padding:.55rem 1.4rem;">Contactar</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=auxilia360@gmail.com&su=Mensaje%20desde%20la%20web&body=Hola%2C%20te%20escribo%20desde%20Auxilia360" target="_blank" class="btn btn-outline" style="font-size:.85rem;padding:.55rem 1.4rem;">Contactar</a>
               </div>
             </div>
           </article>
@@ -911,71 +910,19 @@
       <!-- SIDEBAR -->
       <aside class="sidebar">
 
-        <!-- Newsletter -->
-        <div class="newsletter">
-          <h3>Mantente informado</h3>
-          <p>Recibe cada semana las últimas guías, ayudas y recursos sobre cuidados y dependencia.</p>
-          <input type="email" placeholder="tu@email.com" aria-label="Correo electrónico" />
-          <button type="button">Suscribirme gratis</button>
-        </div>
-
-        <!-- Most read -->
-        <div class="sidebar-widget">
-          <div class="widget-head">Lo más leído</div>
-          <div class="widget-body">
-            <div class="sidebar-article">
-              <div class="img-placeholder" style="width:60px;height:45px;border-radius:4px;flex-shrink:0;"></div>
-              <div>
-                <div class="sidebar-article-title"><a href="#">Cómo pedir el grado de dependencia: paso a paso</a></div>
-                <div class="sidebar-article-date">12.450 lecturas</div>
-              </div>
-            </div>
-            <div class="sidebar-article">
-              <div class="img-p2" style="width:60px;height:45px;border-radius:4px;flex-shrink:0;"></div>
-              <div>
-                <div class="sidebar-article-title"><a href="#">Diferencia entre residencia y centro de día</a></div>
-                <div class="sidebar-article-date">9.872 lecturas</div>
-              </div>
-            </div>
-            <div class="sidebar-article">
-              <div class="img-p4" style="width:60px;height:45px;border-radius:4px;flex-shrink:0;"></div>
-              <div>
-                <div class="sidebar-article-title"><a href="#">Ayuda a domicilio: qué cubre el SAAD y qué no</a></div>
-                <div class="sidebar-article-date">8.310 lecturas</div>
-              </div>
-            </div>
-            <div class="sidebar-article">
-              <div class="img-p3" style="width:60px;height:45px;border-radius:4px;flex-shrink:0;"></div>
-              <div>
-                <div class="sidebar-article-title"><a href="#">Incapacitación judicial: cuándo y cómo solicitarla</a></div>
-                <div class="sidebar-article-date">7.140 lecturas</div>
-              </div>
-            </div>
-            <div class="sidebar-article">
-              <div class="img-p5" style="width:60px;height:45px;border-radius:4px;flex-shrink:0;"></div>
-              <div>
-                <div class="sidebar-article-title"><a href="#">Testamento vital: qué es y cómo hacerlo en España</a></div>
-                <div class="sidebar-article-date">6.990 lecturas</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      
-
         <!-- Guías rápidas -->
         <div class="sidebar-widget">
           <div class="widget-head">Guías rápidas</div>
           <div class="widget-body" style="display:flex;flex-direction:column;gap:8px;">
-            <a href="#" style="display:flex;align-items:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
+            <a href="#" style="display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
               <span style="font-size:1.3rem;">📋</span>
               <span>Trámites de dependencia en 10 pasos</span>
             </a>
-            <a href="#" style="display:flex;align-items:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
+            <a href="#" style="display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
               <span style="font-size:1.3rem;">💶</span>
               <span>Cuánto cobro como cuidador familiar</span>
             </a>
-            <a href="#" style="display:flex;align-items:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
+            <a href="#" style="display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;padding:8px;border:1px solid var(--clr-border);border-radius:6px;font-size:.85rem;color:var(--clr-text);transition:background .15s;" onmouseover="this.style.background='var(--clr-bg)'" onmouseout="this.style.background='transparent'">
               <span style="font-size:1.3rem;">🏠</span>
               <span>Guía de adaptación del hogar</span>
             </a>
@@ -1051,7 +998,7 @@
       <div class="footer-col">
         <h5>Auxilia360</h5>
         <a href="#">Sobre nosotros</a>
-        <a href="mailto:auxilia360@gmail.com">Contacto</a>
+        <a href="https://mail.google.com/mail/?view=cm&to=auxilia360@gmail.com&su=Mensaje%20desde%20la%20web&body=Hola%2C%20te%20escribo%20desde%20Auxilia360" target="_blank">Contacto</a>
         <a href="politica.html">Política de privacidad</a>
         <a href="#">Aviso legal</a>
         <a href="#">Cookies</a>
